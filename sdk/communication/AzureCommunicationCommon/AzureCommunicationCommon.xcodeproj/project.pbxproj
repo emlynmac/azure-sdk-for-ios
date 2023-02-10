@@ -18,7 +18,6 @@
 		88CC8C35254750260028977C /* ObjCCommunicationTokenCredentialAsyncTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CC8C34254750260028977C /* ObjCCommunicationTokenCredentialAsyncTests.m */; };
 		88F1F570254A07BC00876BC4 /* ObjCTokenParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F1F56F254A07BC00876BC4 /* ObjCTokenParserTests.m */; };
 		88F6458928B3EFE200415333 /* CreateCommunicationIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F6458828B3EFE200415333 /* CreateCommunicationIdentifier.swift */; };
-		D112634825B7969B00F437C6 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		D1A42CF825CCA1C100408C0F /* CommunicationTokenCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A42CF725CCA1C100408C0F /* CommunicationTokenCredential.swift */; };
 		F1540EBD25BF893C0056B087 /* CommunicationCloudEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1540EBC25BF893C0056B087 /* CommunicationCloudEnvironment.swift */; };
 		F1540EC125BFD6910056B087 /* CommunicationIdentifierTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1540EC025BFD6910056B087 /* CommunicationIdentifierTest.swift */; };
@@ -282,7 +281,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "BUILD_PATH=$(pwd)\nROOT_PATH=$(pwd | rev | cut -d'/' -f4- | rev) \n$ROOT_PATH/eng/scripts/swiftlint.sh $BUILD_PATH\n";
+			shellScript = "BUILD_PATH=$(pwd)\nROOT_PATH=$(pwd | rev | cut -d'/' -f4- | rev) \n\"$ROOT_PATH/eng/scripts/swiftlint.sh\" \"$BUILD_PATH\"\n";
 		};
 		DED08D1BF86630CC5BACF415 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -321,7 +320,6 @@
 				F1540EBD25BF893C0056B087 /* CommunicationCloudEnvironment.swift in Sources */,
 				882F28D425A632CA009689E3 /* CommunicationTokenRefreshOptions.swift in Sources */,
 				F183A5FE24AFF1B100F0E0D5 /* JwtTokenParser.swift in Sources */,
-				D112634825B7969B00F437C6 /* (null) in Sources */,
 				D1A42CF825CCA1C100408C0F /* CommunicationTokenCredential.swift in Sources */,
 				F183A5FA24AFB37900F0E0D5 /* StaticTokenCredential.swift in Sources */,
 			);
