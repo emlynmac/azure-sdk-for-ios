@@ -34,6 +34,20 @@
 			remoteGlobalIDString = 0A3A5EB72316DB1E00473FDA;
 			remoteInfo = AzureCSComputerVision;
 		};
+		755C967429A5499F00F2040C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 755C966F29A5499F00F2040C /* AzureCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A3A5D762315C89C00473FDA;
+			remoteInfo = AzureCore;
+		};
+		755C967629A5499F00F2040C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 755C966F29A5499F00F2040C /* AzureCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A3A5DDE2315D17F00473FDA;
+			remoteInfo = AzureCoreTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +63,7 @@
 		1DC3550524D9F02D0095ABD9 /* Supporting Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Supporting Files"; sourceTree = "<group>"; };
 		1DE4DB7624C0FE8300631921 /* AutoRefreshTokenCredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoRefreshTokenCredential.swift; sourceTree = "<group>"; };
 		1DE4DB7824C1063E00631921 /* ThreadSafeRefreshableAccessTokenCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadSafeRefreshableAccessTokenCache.swift; sourceTree = "<group>"; };
+		755C966F29A5499F00F2040C /* AzureCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AzureCore.xcodeproj; path = ../../core/AzureCore/AzureCore.xcodeproj; sourceTree = "<group>"; };
 		7AB0952825BF895B0026A2A5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		882F28D325A632CA009689E3 /* CommunicationTokenRefreshOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationTokenRefreshOptions.swift; sourceTree = "<group>"; };
 		8856CEAB253A376D00044559 /* CommunicationAccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationAccessToken.swift; sourceTree = "<group>"; };
@@ -87,6 +102,7 @@
 		0A3A5EAE2316DB1E00473FDA = {
 			isa = PBXGroup;
 			children = (
+				755C966F29A5499F00F2040C /* AzureCore.xcodeproj */,
 				0A5DCA382620FC2500A9ABF3 /* CHANGELOG.md */,
 				7AB0952825BF895B0026A2A5 /* README.md */,
 				0A5DCA332620F99B00A9ABF3 /* Package.swift */,
@@ -154,6 +170,15 @@
 				882F28D325A632CA009689E3 /* CommunicationTokenRefreshOptions.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		755C967029A5499F00F2040C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				755C967529A5499F00F2040C /* AzureCore.framework */,
+				755C967729A5499F00F2040C /* AzureCoreTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +263,12 @@
 			mainGroup = 0A3A5EAE2316DB1E00473FDA;
 			productRefGroup = 0A3A5EB92316DB1E00473FDA /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 755C967029A5499F00F2040C /* Products */;
+					ProjectRef = 755C966F29A5499F00F2040C /* AzureCore.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0A3A5EB72316DB1E00473FDA /* AzureCommunicationCommon */,
@@ -245,6 +276,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		755C967529A5499F00F2040C /* AzureCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AzureCore.framework;
+			remoteRef = 755C967429A5499F00F2040C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		755C967729A5499F00F2040C /* AzureCoreTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AzureCoreTests.xctest;
+			remoteRef = 755C967629A5499F00F2040C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0A3A5EB62316DB1E00473FDA /* Resources */ = {

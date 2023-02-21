@@ -12,16 +12,16 @@
 		0ABFEE3D26B9A34300AB2B39 /* libAzureTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A922A0426B0720A00D4B387 /* libAzureTest.a */; };
 		0ABFEE3E26B9A34A00AB2B39 /* libAzureTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A922A0426B0720A00D4B387 /* libAzureTest.a */; };
 		0AE5BA07267D25AD006B93B7 /* TestSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5BA06267D25AD006B93B7 /* TestSettings.swift */; };
-		75F0EE72298497EA004FE07A /* Trouter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F0EE71298497E9004FE07A /* Trouter.xcframework */; };
-		75F0EE73298497EA004FE07A /* Trouter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75F0EE71298497E9004FE07A /* Trouter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		755C966929A5486A00F2040C /* AzureCommunicationCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F361152630EB7200A895D1 /* AzureCommunicationCommon.framework */; };
+		755C966B29A5486D00F2040C /* AzureCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D110F509258D604B001FA3CD /* AzureCore.framework */; };
+		75ECD87E29A55209000CBA7C /* Trouter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F0EE71298497E9004FE07A /* Trouter.xcframework */; };
+		75ECD87F29A55209000CBA7C /* Trouter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75F0EE71298497E9004FE07A /* Trouter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		817A92C127BC3A7000D2268E /* TrouterSettingsUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817A92C027BC3A7000D2268E /* TrouterSettingsUnitTest.swift */; };
-		88F361162630EB7200A895D1 /* AzureCommunicationCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F361152630EB7200A895D1 /* AzureCommunicationCommon.framework */; };
 		D10C3BCE25A63F7800A181E3 /* listParticipants.json in Resources */ = {isa = PBXBuildFile; fileRef = D10C3BCD25A63F7800A181E3 /* listParticipants.json */; };
 		D10C3BD425A660AF00A181E3 /* listMessages.json in Resources */ = {isa = PBXBuildFile; fileRef = D10C3BD325A660AF00A181E3 /* listMessages.json */; };
 		D10C3BDA25A66D4D00A181E3 /* listThreads.json in Resources */ = {isa = PBXBuildFile; fileRef = D10C3BD925A66D4D00A181E3 /* listThreads.json */; };
 		D10F55FB26E186F200742727 /* TestSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5BA06267D25AD006B93B7 /* TestSettings.swift */; };
 		D10F55FE26E1874700742727 /* TrouterEventUtilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10F55FC26E1873600742727 /* TrouterEventUtilTests.swift */; };
-		D110F50A258D604B001FA3CD /* AzureCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D110F509258D604B001FA3CD /* AzureCore.framework */; };
 		D13CE65125BFB6D700415467 /* listReadReceipts.json in Resources */ = {isa = PBXBuildFile; fileRef = D13CE64E25BFB69100415467 /* listReadReceipts.json */; };
 		D147E62D25CE242C001CFB5D /* AzureCommunicationChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AzureCommunicationChat::AzureCommunicationChat::Product" /* AzureCommunicationChat.framework */; };
 		D147E63925CE244A001CFB5D /* ChatClientUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECA8CD1258181A5006760F7 /* ChatClientUnitTests.swift */; };
@@ -248,13 +248,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		75F0EE74298497EA004FE07A /* Embed Frameworks */ = {
+		75ECD88029A55209000CBA7C /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				75F0EE73298497EA004FE07A /* Trouter.xcframework in Embed Frameworks */,
+				75ECD87F29A55209000CBA7C /* Trouter.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,9 +429,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				75F0EE72298497EA004FE07A /* Trouter.xcframework in Frameworks */,
-				D110F50A258D604B001FA3CD /* AzureCore.framework in Frameworks */,
-				88F361162630EB7200A895D1 /* AzureCommunicationCommon.framework in Frameworks */,
+				75ECD87E29A55209000CBA7C /* Trouter.xcframework in Frameworks */,
+				755C966B29A5486D00F2040C /* AzureCore.framework in Frameworks */,
+				755C966929A5486A00F2040C /* AzureCommunicationCommon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -772,7 +772,7 @@
 				OBJ_120 /* Sources */,
 				OBJ_161 /* Frameworks */,
 				0ADDCFDA258D2AA900BD5E58 /* Format and Lint */,
-				75F0EE74298497EA004FE07A /* Embed Frameworks */,
+				75ECD88029A55209000CBA7C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1339,7 +1339,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9KBH5RKYEW;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1373,7 +1373,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9KBH5RKYEW;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
